@@ -14,11 +14,11 @@ terraform {
     }
    }
 }
-
-provider "hcloud" { token = var.token }
+########################################################################
 
 ## Get existing ssh public key from the Hetzner Project by its name
 data "hcloud_ssh_key" "ssh" {
   name = var.ssh_key_name
 }
 
+########################################################################
